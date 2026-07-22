@@ -17,11 +17,6 @@ body {
     margin: 0 auto 0 auto;
 }
 
-#header {
-    width: 100% !important;
-    margin-bottom: 1rem;
-}
-
 section {
     padding: 1rem 8rem 1rem 8rem;
     border: 1px solid black;
@@ -31,6 +26,14 @@ section {
 
 h3 {
     margin-bottom: 0 !important;
+}
+
+#header {
+    width: 100% !important;
+    margin-bottom: 1rem;
+}
+#header a.selected {
+    text-decoration: underline !important;
 }
 
 .separator {
