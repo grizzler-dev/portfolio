@@ -16,10 +16,100 @@
 
   <!-- Favicon par défaut (fallback) -->
   <link rel="icon" href="assets/favicon/favicon-32x32.png">
+
   <link rel="stylesheet" href="assets/style.css">
-  <script src="assets/script.js"></script>
+  <link rel="stylesheet" href="assets/about.css">
+  <link rel="stylesheet" href="assets/libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/libs/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+  <script src="assets/script.js" defer></script>
 </head>
 <body>
+<nav id="header" class="d-flex align-items-center gap-3">
+  <div id="home" class="d-flex align-items-center justify-content-between gap-3 px-3">
+    <img src="assets/img/logo_reworked.webp" alt="Logo du portfolio Grizzler" class="rounded-4" style="width: 4.5vw;">
+    <p class="m-0 title-text">Grizzler</p>
+  </div>
+  <div class="separator"></div>
+  <a href="index.html" class="btn">Home</a>
+  <a href="projects.html" class="btn">Projects</a>
+  <a href="about.html" class="btn selected">About me</a>
+  <div class="separator"></div>
+  <a href="#whoami" class="btn">Who am I ?</a>
+  <a href="#hobbies" class="btn">Hobbies</a>
+</nav>
 
+<section id="whoami">
+  <h2 class="text-center" style="margin: 2rem 0 5rem 0">Who am I ?</h2>
+  <figure id="pictures">
+    <div class="d-flex justify-content-center">
+      <img src="https://picsum.photos/200" alt="image 200x200"><img src="https://picsum.photos/200" alt="image 200x200"><img src="https://picsum.photos/200" alt="image 200x200"><img src="https://picsum.photos/200" alt="image 200x200"><img src="https://picsum.photos/200" alt="image 200x200">
+    </div>
+    <div class="d-flex justify-content-center">
+      <img src="https://picsum.photos/200" alt="image 200x200"><img src="https://picsum.photos/200" alt="image 200x200"><img src="https://picsum.photos/200" alt="image 200x200"><img src="https://picsum.photos/200" alt="image 200x200"><img src="https://picsum.photos/200" alt="image 200x200">
+    </div>
+  </figure>
+  <div class="separator horizontal my-5"></div>
+  <div class="mx-5">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</section>
+
+<section id="hobbies" class="my-5">
+  <div id="volley" class="hobby-element">
+    <h3>Title</h3>
+    <div>
+      <img src="https://picsum.photos/600/300" alt="img to describe hobby">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+  <div id="building-industry" class="hobby-element">
+    <h3>Title</h3>
+    <div>
+      <img src="https://picsum.photos/600/300" alt="img to describe hobby">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+  <div id="anime" class="hobby-element">
+    <h3>Title</h3>
+    <div>
+      <img src="https://picsum.photos/600/300" alt="img to describe hobby">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+  <div id="games" class="hobby-element">
+    <h3>Title</h3>
+    <div>
+      <img src="https://picsum.photos/600/300" alt="img to describe hobby">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
+</section>
+
+<div id="footer" class="d-flex justify-content-between align-items-center">
+  <div class="text-left">
+    <h5 class="fw-bold">Links</h5>
+    <ul class="no-bullet">
+      <li><a href="https://github.com/grizzler-dev" target="_blank">GitHub - Grizzler <i class="bi bi-box-arrow-up-right"></i></a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+  </div>
+  <div class="separator border-white"></div>
+  <div>
+    <h5 class="text-center">
+      <span class="fw-bold">Grizzler - Nicolas GERVASI</span><br>
+      <span class="fw-light text-small">© 2026 Grizzler - Tous droits résérvés</span><br>
+      <span class="fw-light text-small"><a href="legal-notice.html">Mention légales</a></span>
+    </h5>
+  </div>
+  <div class="separator border-white"></div>
+  <div class="text-right">
+    <h5 class="fw-bold">Utiles</h5>
+    <ul class="no-bullet">
+      <li><a href="assets/docs/cv_202606.pdf" target="_blank">Curriculum Vitae - Nicolas GERVASI <i class="bi bi-box-arrow-up-right"></i></a></li>
+    </ul>
+  </div>
+</div>
+
+<a href="#header" class="btn" id="go-up-btn"><i class="bi bi-arrow-up"></i></a>
 </body>
 </html>
