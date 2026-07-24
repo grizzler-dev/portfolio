@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Grizzler - Portfolio</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <meta name="description" content="Portfolio de Nicolas GERVASI (Grizzler), Développeur WEB full-stack PHP/JS">
+  <title>Portfolio de Nicolas GERVASI - Grizzler</title>
 
   <!-- Favicon standard -->
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -20,26 +20,31 @@
 
   <link rel="stylesheet" href="assets/libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/libs/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
-  <script src="assets/script.js"></script>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/script.js" defer></script>
 </head>
 
 <body>
-<nav id="header" class="d-flex align-items-center gap-3">
-  <div class="d-flex align-items-center justify-content-between gap-3 px-3">
-    <img src="assets/img/logo_reworked.jpg" alt="website logo" width="85vw" class="rounded-4">
-    <p class="m-0 title-text">Grizzler</p>
-  </div>
-  <div class="separator"></div>
-  <a href="#cursus" class="btn">Cursus</a>
-  <a href="#professionals" class="btn">Professionals</a>
-  <a href="#abilities" class="btn">Abilities</a>
-  <div class="separator"></div>
-  <a href="projects.html" class="btn">Projects</a>
-</nav>
+<header>
+  <nav id="header" class="d-flex align-items-center gap-3">
+    <div id="home" class="d-flex align-items-center justify-content-between gap-3 px-3">
+      <img src="assets/img/logo_reworked.webp" alt="Logo du portfolio Grizzler" class="rounded-4" style="width: 4.5vw;">
+      <p class="m-0 title-text">Grizzler</p>
+    </div>
+    <div class="separator"></div>
+    <a href="index.html" class="btn selected">Home</a>
+    <a href="projects.html" class="btn">Projects</a>
+    <a href="about.html" class="btn">About me</a>
+    <div class="separator"></div>
+    <a href="#cursus" class="btn">Cursus</a>
+    <a href="#professionals" class="btn">Professionals</a>
+    <a href="#abilities" class="btn">Abilities</a>
+  </nav>
+</header>
 
-<section id="profile">
+<section id="profile" aria-label="Section du Profil de Grizzler">
   <div class="d-flex align-items-center">
-    <img src="assets/img/cv_2026_rounded.png" alt="CV Picture" width="20%" style="filter: grayscale(1);">
+    <img src="assets/img/cv_2026_rounded.webp" alt="CV Picture" width="20%" style="filter: grayscale(1);">
     <div class="mx-5">
       <h1>Firstname LASTNAME</h1>
       <p>Age and others</p>
@@ -52,7 +57,7 @@
   </div>
 </section>
 
-<section id="cursus">
+<section id="cursus" aria-label="Section des Formations de Grizzler">
   <h2>Cursus</h2>
   <div class="cursus-element">
     <h3>Title - <span class="text-small text-grey">Date | University</span></h3>
@@ -65,7 +70,7 @@
   </div>
 </section>
 
-<section id="professionals">
+<section id="professionals" aria-label="Section des Expériences professionnelles de Grizzler">
   <h2>Professionals</h2>
   <div class="professional-element">
     <div>
@@ -102,7 +107,7 @@
   </div>
 </section>
 
-<section id="abilities">
+<section id="abilities" aria-label="Section des Compétences de Grizzler">
   <h2>Abilities</h2>
   <div>
     <h5>Domaine 1</h5>
@@ -124,18 +129,18 @@
   </div>
 </section>
 
-<section id="hobbies">
+<section id="hobbies" aria-label="Section des Hobbies de Grizzler">
   <h2>Hobbies</h2>
   <div>
     <p>Hobby 1 Hobby 2</p>
   </div>
 </section>
 
-<div id="footer" class="d-flex justify-content-between align-items-center">
+<footer id="footer" class="d-flex justify-content-between align-items-center">
   <div class="text-left">
     <h5 class="fw-bold">Links</h5>
     <ul class="no-bullet">
-      <li><a href="https://github.com/grizzler-dev" target="_blank">GitHub - Grizzler <i class="bi bi-box-arrow-up-right"></i></a></li>
+      <li><a href="https://github.com/grizzler-dev" target="_blank" title="Lien vers le GitHub de Grizzler">GitHub - Grizzler <i class="bi bi-box-arrow-up-right"></i></a></li>
       <li><a href="projects.html">Projects</a></li>
     </ul>
   </div>
@@ -151,11 +156,11 @@
   <div class="text-right">
     <h5 class="fw-bold">Utiles</h5>
     <ul class="no-bullet">
-      <li><a href="assets/docs/cv_202606.pdf" target="_blank">Curriculum Vitae - Nicolas GERVASI</a></li>
+      <li><a href="assets/docs/cv_202606.pdf" target="_blank">Curriculum Vitae - Nicolas GERVASI <i class="bi bi-box-arrow-up-right"></i></a></li>
     </ul>
   </div>
-</div>
+</footer>
 
-<a href="#header" class="btn" id="go-up-btn"><i class="bi bi-arrow-up"></i></a>
+<a href="#header" class="btn" id="go-up-btn" aria-label="Revenir en haut de la page"><i class="bi bi-arrow-up"></i></a>
 </body>
 </html>

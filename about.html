@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <meta name="description" content="À propos de Nicolas GERVASI (Grizzler) : Développeur full-stack, passions, hobbies, parcours personnel.">
+  <title>À propos | Portfolio de Nicolas GERVASI - Grizzler</title>
 
   <!-- Favicon standard -->
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -17,26 +18,28 @@
   <!-- Favicon par défaut (fallback) -->
   <link rel="icon" href="assets/favicon/favicon-32x32.png">
 
-  <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/about.css">
   <link rel="stylesheet" href="assets/libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/libs/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/about.css">
   <script src="assets/script.js" defer></script>
 </head>
 <body>
-<nav id="header" class="d-flex align-items-center gap-3">
-  <div id="home" class="d-flex align-items-center justify-content-between gap-3 px-3">
-    <img src="assets/img/logo_reworked.webp" alt="Logo du portfolio Grizzler" class="rounded-4" style="width: 4.5vw;">
-    <p class="m-0 title-text">Grizzler</p>
-  </div>
-  <div class="separator"></div>
-  <a href="index.html" class="btn">Home</a>
-  <a href="projects.html" class="btn">Projects</a>
-  <a href="about.html" class="btn selected">About me</a>
-  <div class="separator"></div>
-  <a href="#whoami" class="btn">Who am I ?</a>
-  <a href="#hobbies" class="btn">Hobbies</a>
-</nav>
+<header>
+  <nav id="header" class="d-flex align-items-center gap-3">
+    <div id="home" class="d-flex align-items-center justify-content-between gap-3 px-3">
+      <img src="assets/img/logo_reworked.webp" alt="Logo du portfolio Grizzler" class="rounded-4" style="width: 4.5vw;">
+      <p class="m-0 title-text">Grizzler</p>
+    </div>
+    <div class="separator"></div>
+    <a href="index.html" class="btn">Home</a>
+    <a href="projects.html" class="btn">Projects</a>
+    <a href="about.html" class="btn selected">About me</a>
+    <div class="separator"></div>
+    <a href="#whoami" class="btn">Who am I ?</a>
+    <a href="#hobbies" class="btn">Hobbies</a>
+  </nav>
+</header>
 
 <section id="whoami">
   <h2 class="text-center" style="margin: 2rem 0 5rem 0">Who am I ?</h2>
@@ -85,7 +88,7 @@
   </div>
 </section>
 
-<div id="footer" class="d-flex justify-content-between align-items-center">
+<footer id="footer" class="d-flex justify-content-between align-items-center">
   <div class="text-left">
     <h5 class="fw-bold">Links</h5>
     <ul class="no-bullet">
@@ -108,8 +111,8 @@
       <li><a href="assets/docs/cv_202606.pdf" target="_blank">Curriculum Vitae - Nicolas GERVASI <i class="bi bi-box-arrow-up-right"></i></a></li>
     </ul>
   </div>
-</div>
+</footer>
 
-<a href="#header" class="btn" id="go-up-btn"><i class="bi bi-arrow-up"></i></a>
+<a href="#header" class="btn" id="go-up-btn" aria-label="Revenir en haut de la page"><i class="bi bi-arrow-up"></i></a>
 </body>
 </html>

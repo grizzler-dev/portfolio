@@ -3,11 +3,13 @@
 }
 
 .chip {
+    display: inline-block;
     background-color: #4CAF50;
     color: white;
     font-weight: bold;
     border-radius: 5px;
     border: 1.5px solid #4CAF50;
     margin-right: 0.5rem;
-    padding: 0.1rem 0.4rem;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.85rem;
 }

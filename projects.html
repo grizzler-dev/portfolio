@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Projects</title>
-  <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/projects.css">
+  <meta name="description" content="Projets de Nicolas GERVASI (Grizzler) : applications web, outils, projets annexes.">
+  <title>Projets | Portfolio de Nicolas GERVASI - Grizzler</title>
 
   <!-- Favicon standard -->
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -21,36 +20,41 @@
 
   <link rel="stylesheet" href="assets/libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/libs/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
-  <script src="assets/script.js"></script>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/projects.css">
+  <script src="assets/script.js" defer></script>
 </head>
 <body>
-<nav id="header" class="d-flex align-items-center gap-3">
-  <div class="d-flex align-items-center justify-content-between gap-3 px-3">
-    <img src="assets/img/logo_reworked.jpg" alt="website logo" width="85vw" class="rounded-4">
-    <p class="m-0 title-text">Grizzler</p>
-  </div>
-  <div class="separator"></div>
-  <a href="#cursus" class="btn">Cursus</a>
-  <a href="#professionals" class="btn">Professionals</a>
-  <a href="#abilities" class="btn">Abilities</a>
-  <div class="separator"></div>
-  <a href="projects.html" class="btn selected">Projects</a>
-</nav>
+<header>
+  <nav id="header" class="d-flex align-items-center gap-3">
+    <div id="home" class="d-flex align-items-center justify-content-between gap-3 px-3">
+      <img src="assets/img/logo_reworked.webp" alt="Logo du portfolio Grizzler" class="rounded-4" style="width: 4.5vw;">
+      <p class="m-0 title-text">Grizzler</p>
+    </div>
+    <div class="separator"></div>
+    <a href="index.html" class="btn">Home</a>
+    <a href="projects.html" class="btn selected">Projects</a>
+    <a href="about.html" class="btn">About me</a>
+    <div class="separator"></div>
+    <a href="#projects" class="btn">Dev projects</a>
+    <a href="#sides" class="btn">Side projects</a>
+  </nav>
+</header>
 
 <section id="projects">
   <h2 class="fw-bold mb-4">Personal development projects</h2>
   <div class="project">
-    <h3>Projects 1 (<span><a href="">link 1</a></span>)</h3>
+    <h3>Projects 1 (<span><a href="" title="">link 1</a></span>)</h3>
     <h5>Context : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
   <div class="project">
-    <h3>Projects 2 (<span><a href="">link 2</a></span>)</h3>
+    <h3>Projects 2 (<span><a href="" title="">link 2</a></span>)</h3>
     <h5>Context : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
   <div class="project">
-    <h3>Projects 3 (<span><a href="">link 3</a></span>)</h3>
+    <h3>Projects 3 (<span><a href="" title="">link 3</a></span>)</h3>
     <h5>Context : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
@@ -90,7 +94,7 @@
   </div>
 </section>
 
-<div id="footer" class="d-flex justify-content-between align-items-center">
+<footer id="footer" class="d-flex justify-content-between align-items-center">
   <div class="text-left">
     <h5 class="fw-bold">Links</h5>
     <ul class="no-bullet">
@@ -110,9 +114,11 @@
   <div class="text-right">
     <h5 class="fw-bold">Utiles</h5>
     <ul class="no-bullet">
-      <li><a href="assets/docs/cv_202606.pdf" target="_blank">Curriculum Vitae - Nicolas GERVASI</a></li>
+      <li><a href="assets/docs/cv_202606.pdf" target="_blank">Curriculum Vitae - Nicolas GERVASI <i class="bi bi-box-arrow-up-right"></i></a></li>
     </ul>
   </div>
-</div>
+</footer>
+
+<a href="#header" class="btn" id="go-up-btn" aria-label="Revenir en haut de la page"><i class="bi bi-arrow-up"></i></a>
 </body>
 </html>
