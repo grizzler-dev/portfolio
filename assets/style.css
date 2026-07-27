@@ -13,7 +13,7 @@ body {
 }
 
 section {
-    padding: 1rem 8rem 1rem 8rem;
+    padding: 1rem 4rem 1rem 4rem;
     margin: 0 auto 1rem auto;
     width: 80%;
 }
@@ -24,10 +24,15 @@ h3 {
 
 #header {
     width: 100% !important;
-    margin-bottom: 1rem;
+    height: 8rem;
 }
 #header a.selected {
     text-decoration: underline !important;
+}
+
+nav {
+    padding: 3rem;
+    border: 1px solid #000;
 }
 
 .logo {
@@ -79,8 +84,12 @@ h3 {
     padding-left: 1rem;
 }
 
+main {
+    padding: 1rem 4rem 1rem 4rem;
+}
+
 #profile-picture {
-    max-width: 23%; /* si tu veux une taille relative */
+    max-width: 20rem;
 }
 #profile-picture img {
     width: 100%;
@@ -122,11 +131,12 @@ h3 {
 }
 
 #footer {
+    position: relative;
+    bottom: 0;
     background: #1b1d1d !important;
     color: white;
     padding: 1rem 2rem;
     margin-top: 1rem;
-    height: 10rem;
 }
 #footer a {
     color: white;
@@ -144,10 +154,6 @@ h3 {
 }
 
 @media (min-width: 576px) and (max-width: 1199px) {
-    nav {
-        padding: 3rem;
-        border: 1px solid #000;
-    }
 }
 
 @media (max-width: 575px) {

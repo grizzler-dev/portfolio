@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio de Nicolas GERVASI (Grizzler), développeur web full‑stack PHP / Vue.js basé en France. Expert Symfony, Slim, Docker, CI/CD, modernisation d’applications et architecture logicielle.">
 
   <meta property="og:title" content="Portfolio de Nicolas GERVASI - Développeur Fullstack">
@@ -34,28 +35,47 @@
   <link rel="stylesheet" href="assets/libs/bootstrap-5.3.8-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/libs/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
   <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/responsive.css">
   <script src="assets/script.js" defer></script>
 </head>
 
 <body>
 <header>
-  <nav id="header">
-    <ul class="d-flex align-items-center gap-3 no-bullet m-0">
-      <li id="home" class="d-flex align-items-center justify-content-between gap-3 px-3">
-        <img src="assets/img/logo_reworked.webp" alt="Logo du portfolio Grizzler" class="rounded-4 logo">
-        <p class="m-0 title-text">Grizzler</p>
-      </li>
-      <li class="separator"></li>
-      <li><a href="index.html" class="btn selected">Accueil</a></li>
-      <li><a href="projects.html" class="btn">Projets</a></li>
-      <li><a href="about.html" class="btn">À propos</a></li>
-      <li class="separator"></li>
-      <li><a href="#cursus" class="btn">Cursus</a></li>
-      <li><a href="#professionals" class="btn">Expériences professionnelles</a></li>
-      <li><a href="#abilities" class="btn">Compétences</a></li>
-      <li><a href="#languages" class="btn">Langues</a></li>
-      <li><a href="#hobbies" class="btn">Hobbies</a></li>
-    </ul>
+  <nav id="header" class="d-flex flex-row align-items-center">
+    <div id="home" class="d-flex flex-row align-items-center gap-3 px-3">
+      <img src="assets/img/logo_reworked.webp" alt="Logo du portfolio Grizzler" class="rounded-4 logo">
+      <p class="m-0 title-text">Grizzler</p>
+    </div>
+    <button id="menu-toggle" aria-label="Ouvrir le menu" class="menu-toggle mt-3">
+      <i class="bi bi-list"></i>
+    </button>
+    <div id="menu-container" class="mt-2">
+      <ul class="d-flex align-items-center gap-3 no-bullet m-0">
+        <li class="separator"></li>
+        <li><a href="index.html" class="btn selected">Accueil</a></li>
+        <li><a href="projects.html" class="btn">Projets</a></li>
+        <li><a href="about.html" class="btn">À propos</a></li>
+        <li class="separator"></li>
+        <li><a href="#cursus" class="btn">Cursus</a></li>
+        <li><a href="#professionals" class="btn">Expériences professionnelles</a></li>
+        <li><a href="#abilities" class="btn">Compétences</a></li>
+        <li><a href="#languages" class="btn">Langues</a></li>
+        <li><a href="#hobbies" class="btn">Hobbies</a></li>
+      </ul>
+    </div>
+    <div id="mobile-menu" class="mobile-menu">
+      <ul class="no-bullet m-0 text-right">
+        <li><a href="index.html" class="btn selected">Accueil</a></li>
+        <li><a href="projects.html" class="btn">Projets</a></li>
+        <li><a href="about.html" class="btn">À propos</a></li>
+        <li class="separator horizontal mx-0"></li>
+        <li><a href="#cursus" class="btn">Cursus</a></li>
+        <li><a href="#professionals" class="btn">Expériences professionnelles</a></li>
+        <li><a href="#abilities" class="btn">Compétences</a></li>
+        <li><a href="#languages" class="btn">Langues</a></li>
+        <li><a href="#hobbies" class="btn">Hobbies</a></li>
+      </ul>
+    </div>
   </nav>
 </header>
 
