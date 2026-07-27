@@ -30,6 +30,12 @@ h3 {
     text-decoration: underline !important;
 }
 
+.logo {
+    width: 5.5rem;
+    height: auto;
+    display: block;
+}
+
 .separator {
     border-left: 1px solid #000;
     height: 3rem;
@@ -71,6 +77,16 @@ h3 {
 .no-bullet {
     list-style: none;
     padding-left: 1rem;
+}
+
+#profile-picture {
+    max-width: 23%; /* si tu veux une taille relative */
+}
+#profile-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
 .cursus-element {

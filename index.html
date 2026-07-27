@@ -1,8 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Portfolio de Nicolas GERVASI (Grizzler), Développeur WEB full-stack PHP/JS">
+  <meta name="description" content="Portfolio de Nicolas GERVASI (Grizzler), développeur web full‑stack PHP / Vue.js basé en France. Expert Symfony, Slim, Docker, CI/CD, modernisation d’applications et architecture logicielle.">
+
+  <meta property="og:title" content="Portfolio de Nicolas GERVASI - Développeur Fullstack">
+  <meta property="og:description" content="Développeur PHP / Vue.js confirmé, expert Symfony, Slim, Docker, CI/CD. Découvrez mes projets et mon parcours.">
+  <meta property="og:image" content="https://www.nicolas-gervasi.com/assets/img/cv_2026_rounded.webp">
+  <meta property="og:url" content="https://www.nicolas-gervasi.com/">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portfolio de Nicolas GERVASI">
+  <meta name="twitter:description" content="Développeur Fullstack PHP / Vue.js confirmé. Découvrez mes projets et mon parcours.">
+  <meta name="twitter:image" content="https://www.nicolas-gervasi.com/assets/img/cv_2026_rounded.webp">
+
+  <link rel="canonical" href="https://www.nicolas-gervasi.com/">
   <title>Portfolio de Nicolas GERVASI - Grizzler</title>
 
   <!-- Favicon standard -->
@@ -26,122 +39,174 @@
 
 <body>
 <header>
-  <nav id="header" class="d-flex align-items-center gap-3">
-    <div id="home" class="d-flex align-items-center justify-content-between gap-3 px-3">
-      <img src="assets/img/logo_reworked.webp" alt="Logo du portfolio Grizzler" class="rounded-4" style="width: 4.5vw;">
-      <p class="m-0 title-text">Grizzler</p>
-    </div>
-    <div class="separator"></div>
-    <a href="index.html" class="btn selected">Home</a>
-    <a href="projects.html" class="btn">Projects</a>
-    <a href="about.html" class="btn">About me</a>
-    <div class="separator"></div>
-    <a href="#cursus" class="btn">Cursus</a>
-    <a href="#professionals" class="btn">Professionals</a>
-    <a href="#abilities" class="btn">Abilities</a>
+  <nav id="header">
+    <ul class="d-flex align-items-center gap-3 no-bullet m-0">
+      <li id="home" class="d-flex align-items-center justify-content-between gap-3 px-3">
+        <img src="assets/img/logo_reworked.webp" alt="Logo du portfolio Grizzler" class="rounded-4 logo">
+        <p class="m-0 title-text">Grizzler</p>
+      </li>
+      <li class="separator"></li>
+      <li><a href="index.html" class="btn selected">Accueil</a></li>
+      <li><a href="projects.html" class="btn">Projets</a></li>
+      <li><a href="about.html" class="btn">À propos</a></li>
+      <li class="separator"></li>
+      <li><a href="#cursus" class="btn">Cursus</a></li>
+      <li><a href="#professionals" class="btn">Expériences professionnelles</a></li>
+      <li><a href="#abilities" class="btn">Compétences</a></li>
+      <li><a href="#languages" class="btn">Langues</a></li>
+      <li><a href="#hobbies" class="btn">Hobbies</a></li>
+    </ul>
   </nav>
 </header>
 
-<section id="profile" aria-label="Section du Profil de Grizzler">
-  <div class="d-flex align-items-center">
-    <img src="assets/img/cv_2026_rounded.webp" alt="CV Picture" width="20%" style="filter: grayscale(1);">
-    <div class="mx-5">
-      <h1>Firstname LASTNAME</h1>
-      <p>Age and others</p>
-      <p>Email / Phone</p>
+<main>
+  <section id="profile" aria-label="Section du Profil de Grizzler" aria-labelledby="title-profile">
+    <div class="d-flex align-items-center">
+      <div id="profile-picture">
+        <img src="assets/img/cv_2026_rounded.webp" alt="Photo de profil de Nicolas GERVASI, développeur web fullstack" style="filter: grayscale(1);" loading="lazy">
+      </div>
+      <div class="mx-5">
+        <h1 id="title-profile">Nicolas GERVASI — Développeur Web Fullstack (PHP/Vue.js)</h1>
+        <h3>27 ans</h3>
+        <p><a href="tel:+33602096677">06 02 09 66 77</a> - <a href="mailto:nicolas.gervasi26@gmail.com">nicolas.gervasi26@gmail.com</a></p>
+      </div>
     </div>
-  </div>
-  <div class="mt-5">
-    <h2>Profile</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-</section>
+    <div class="mt-5">
+      <h2>Profil</h2>
+      <p>
+        Développeur WEB Fullstack, PHP / Vue.js confirmé avec 4 ans d’expérience. J’ai travaillé sur la modernisation d’applications
+        legacy, des migrations techniques majeures et l’évolution d’applications volumineuses utilisées par plus de 500
+        utilisateurs. Scrum Master principal dans une équipe de 5 personnes, j’ai coordonné les développements et encadré
+        une alternante ainsi que plusieurs stagiaires. Expertise solide en PHP (Symfony, Slim), Vue.js, Docker et CI/CD. Habitué
+        aux environnements critiques, aux architectures modulaires et aux projets à forte contrainte opérationnelle.
+      </p>
+    </div>
+  </section>
 
-<section id="cursus" aria-label="Section des Formations de Grizzler">
-  <h2>Cursus</h2>
-  <div class="cursus-element">
-    <h3>Title - <span class="text-small text-grey">Date | University</span></h3>
-  </div>
-  <div class="cursus-element">
-    <h3>Title - <span class="text-small text-grey">Date | University</span></h3>
-  </div>
-  <div class="cursus-element">
-    <h3>Title - <span class="text-small text-grey">Date | University</span></h3>
-  </div>
-</section>
+  <section id="cursus" aria-label="Section des Formations de Grizzler" aria-labelledby="title-profile">
+    <h2 id="title-cursus">Cursus</h2>
+    <div class="cursus-element">
+      <h4>MASTER MIASHS WIC - <span class="text-small text-grey">2020 - 2022 | Université Grenoble Alpes</span></h4>
+    </div>
+    <div class="cursus-element">
+      <h4>LICENCE PROFESSIONNELLE CASIR - <span class="text-small text-grey">2019 - 2020 | IUT de Valence - UGA</span></h4>
+    </div>
+    <div class="cursus-element">
+      <h4>DUT INFORMATIQUE - <span class="text-small text-grey">2017 - 2019 | IUT de Valence - UGA</span></h4>
+    </div>
+  </section>
 
-<section id="professionals" aria-label="Section des Expériences professionnelles de Grizzler">
-  <h2>Professionals</h2>
-  <div class="professional-element">
+  <section id="professionals" aria-label="Section des Expériences professionnelles de Grizzler" aria-labelledby="title-professionals">
+    <h2 id="title-professionals">Expériences professionnelles</h2>
+    <div class="professional-element">
+      <div>
+        <h4>CDI - DÉVELOPPEUR WEB FULLSTACK</h4>
+        <p>2022 - Aujourd'hui | Skipper groupe</p>
+      </div>
+      <ul class="description">
+        <li>Gestion de sprint dans une équipe de 5 développeurs</li>
+        <li>Maquettage et conception de nouveau module dans une application existante.</li>
+        <li>Migration de PHP (7 → 8) et de Framework (Slim/Symfony)</li>
+        <li>Maintenance et support d’une application historique lourde</li>
+        <li>Encadrement d’alternant et de stagiaire</li>
+      </ul>
+    </div>
+    <div class="professional-element">
+      <div>
+        <h4>STAGIAIRE - WEB FULLSTACK</h4>
+        <p>du 02-2022 au 06-2022  | ID3 Technologies</p>
+      </div>
+      <ul class="description">
+        <li>Spring boot, Vue.js : Maquettage, conception, refonte graphique,
+          notion de gestion de projet, migration Angular</li>
+      </ul>
+    </div>
+    <div class="professional-element">
+      <div>
+        <h4>STAGIAIRE - WEB BACKEND</h4>
+        <p>du 02-2021 au 06-2021  | Wikicaves</p>
+      </div>
+      <ul class="description">
+        <li>React.js / Node.js : Ajout d’un import d’une grande quantité de
+          données, Mise en place de storybook</li>
+      </ul>
+    </div>
+    <div class="professional-element">
+      <div>
+        <h4>ALTERNANT - WEB FULLSTACK</h4>
+        <p>2019 - 2020 | Adista Fingerprint</p>
+      </div>
+      <ul class="description">
+        <li>Support et maintiens d’application client</li>
+        <li>Symfony/QCodo/Prestashop</li>
+        <li>Implémentation d’un système de templating d’email (HTML→PDF)</li>
+        <li>Gestion des systèmes d’import/export de différentes applications</li>
+        <li>Conception et implémentation de nouvelles routes d’api d’import/export</li>
+        <li>Gestion des développements agile (KANBAN)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="abilities" aria-label="Section des Compétences de Grizzler" aria-labelledby="title-abilities">
+    <h2 id="title-abilities">Compétences</h2>
     <div>
-      <h3>Title</h3>
-      <p>Date | Company</p>
+      <h5>Frontend</h5>
+      <p>
+        Javascript (avancé), Vue.js (confirmé), HTML (confirmé), CSS (confirmé)
+      </p>
     </div>
-    <ul class="description">
-      <li>Thing that I've done in this company</li>
-      <li>Thing that I've done in this company</li>
-      <li>Thing that I've done in this company</li>
-      <li>Thing that I've done in this company</li>
-    </ul>
-  </div>
-  <div class="professional-element">
     <div>
-      <h3>Title</h3>
-      <p>Date | Company</p>
+      <h5>Backend</h5>
+      <p>
+        Slim (avancé), Symfony 6/7 (avancé), PHP (avancé), Java (avancé)
+      </p>
     </div>
-    <ul class="description">
-      <li>Thing that I've done in this company</li>
-      <li>Thing that I've done in this company</li>
-    </ul>
-  </div>
-  <div class="professional-element">
     <div>
-      <h3>Title</h3>
-      <p>Date | Company</p>
+      <h5>DevOps</h5>
+      <p>
+        Docker (avancé), Traefik (débutant), gestion de serveurs Unix (avancé), Ordonnanceur - VTOM (débutant)
+      </p>
     </div>
-    <ul class="description">
-      <li>Thing that I've done in this company</li>
-      <li>Thing that I've done in this company</li>
-      <li>Thing that I've done in this company</li>
-    </ul>
-  </div>
-</section>
+    <div>
+      <h5>Méthodologies</h5>
+      <p>
+        Scrum master (avancé), méthode agile (avancé)
+      </p>
+    </div>
+    <div>
+      <h5>Outils</h5>
+      <p>
+        Git (confirmé), Fork (confirmé), Phpstorm (confirmé), Suite Office (avancé)
+      </p>
+    </div>
+  </section>
 
-<section id="abilities" aria-label="Section des Compétences de Grizzler">
-  <h2>Abilities</h2>
-  <div>
-    <h5>Domaine 1</h5>
-    <p>
-      Ability 1 (level: beginner), Ability 2 (level: beginner), Ability 3 (level: beginner)
-    </p>
-  </div>
-  <div>
-    <h5>Domaine 2</h5>
-    <p>
-      Ability 1 (level: beginner), Ability 2 (level: beginner), Ability 3 (level: beginner)
-    </p>
-  </div>
-  <div>
-    <h5>Domaine 3</h5>
-    <p>
-      Ability 1 (level: beginner), Ability 2 (level: beginner), Ability 3 (level: beginner)
-    </p>
-  </div>
-</section>
+  <section id="languages" aria-label="Section des Langues de Grizzler" aria-labelledby="title-languages">
+    <h2 id="title-languages">Langues</h2>
+    <div>
+      <p>Français (Langue Maternelle)</p>
+      <p>Anglais (B2)</p>
+    </div>
+  </section>
 
-<section id="hobbies" aria-label="Section des Hobbies de Grizzler">
-  <h2>Hobbies</h2>
-  <div>
-    <p>Hobby 1 Hobby 2</p>
-  </div>
-</section>
+  <section id="hobbies" aria-label="Section des Hobbies de Grizzler" aria-labelledby="title-hobbies">
+    <h2 id="title-hobbies">Hobbies</h2>
+    <div>
+      <p>Manga / Volley-Ball / Callisthénie</p>
+    </div>
+  </section>
+</main>
 
 <footer id="footer" class="d-flex justify-content-between align-items-center">
   <div class="text-left">
-    <h5 class="fw-bold">Links</h5>
+    <h5 class="fw-bold">Liens</h5>
     <ul class="no-bullet">
-      <li><a href="https://github.com/grizzler-dev" target="_blank" title="Lien vers le GitHub de Grizzler">GitHub - Grizzler <i class="bi bi-box-arrow-up-right"></i></a></li>
-      <li><a href="projects.html">Projects</a></li>
+      <li>
+        <a href="https://github.com/grizzler-dev" target="_blank" title="Lien vers le GitHub de Grizzler" rel="noopener noreferrer">
+          GitHub - Grizzler <i class="bi bi-box-arrow-up-right"></i>
+        </a>
+      </li>
+      <li><a href="projects.html">Projets</a></li>
     </ul>
   </div>
   <div class="separator border-white"></div>
@@ -149,7 +214,7 @@
     <h5 class="text-center">
       <span class="fw-bold">Grizzler - Nicolas GERVASI</span><br>
       <span class="fw-light text-small">© 2026 Grizzler - Tous droits résérvés</span><br>
-      <span class="fw-light text-small"><a href="legal-notice.html">Mention légales</a></span>
+      <span class="fw-light text-small"><a href="legal-notice.html">Mentions légales</a></span>
     </h5>
   </div>
   <div class="separator border-white"></div>
@@ -163,4 +228,20 @@
 
 <a href="#header" class="btn" id="go-up-btn" aria-label="Revenir en haut de la page"><i class="bi bi-arrow-up"></i></a>
 </body>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nicolas GERVASI",
+    "jobTitle": "Développeur Web Fullstack",
+    "url": "https://www.nicolas-gervasi.com",
+    "image": "https://www.nicolas-gervasi.com/assets/img/cv_2026_rounded.webp",
+    "email": "mailto:nicolas.gervasi26@gmail.com",
+    "telephone": "+33602096677",
+    "sameAs": [
+      "https://github.com/grizzler-dev"
+    ]
+  }
+</script>
 </html>
