@@ -1,0 +1,252 @@
+/* =========================================================
+   BASE GLOBALE (sans media queries)
+   ========================================================= */
+
+html {
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#header {
+    position: relative;
+    padding: 1rem;
+}
+
+#header ul {
+    align-items: center;
+}
+
+#header a.btn {
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   MOBILE — < 576px
+   ========================================================= */
+
+@media (max-width: 576px) {
+
+    /* Typographie */
+    html {
+        font-size: 14px;
+    }
+
+    /* Layout général */
+    section {
+        padding: 1rem 0.5rem;
+    }
+
+    main {
+        padding: 1rem 0.5rem;
+    }
+
+    .d-flex {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .text-right {
+        text-align: right !important;
+    }
+
+    .flex-row {
+        display: flex;
+        flex-direction: row !important;
+    }
+
+    /* Bouton hamburger */
+    #menu-toggle {
+        display: block !important;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+        margin: 2rem 0 0 3rem;
+    }
+
+    /* Menu desktop caché */
+    #menu-container {
+        display: none !important;
+    }
+
+    /* Menu mobile */
+    #mobile-menu {
+        display: none;
+        position: absolute;
+        float: right;
+        top: 8rem;
+        left: 0;
+        width: 100%;
+        background: #fffbf8;
+        padding: 1.5rem 1rem;
+        z-index: 999;
+        border-top: 1px solid #333;
+    }
+
+    #mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+    }
+
+    #mobile-menu a {
+        font-size: 1.2rem;
+        padding: 0.5rem 0;
+        text-decoration: none;
+        color: #333;
+    }
+
+    #mobile-menu.open {
+        display: block;
+        animation: slideDown 0.25s ease-out;
+    }
+
+    #footer div {
+        text-align: center !important;
+    }
+
+    #footer ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    #footer .separator {
+        border-left: 1px solid #000;
+        border-left: 0;
+        border-bottom: 1px solid #000;
+        height: 1px;
+        width: 5rem;
+        margin: 1.5rem auto;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+
+/* =========================================================
+   TABLETTE — 576px → 768px
+   ========================================================= */
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+    #menu-toggle {
+        display: block !important;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+        margin-left: 1rem;
+    }
+
+    #menu-container {
+        display: none !important;
+    }
+
+    #mobile-menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #1b1d1d;
+        padding: 2rem 1.5rem;
+        z-index: 999;
+    }
+
+    #mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    #mobile-menu a {
+        color: white;
+        font-size: 1.3rem;
+    }
+
+    #mobile-menu.open {
+        display: block;
+        animation: slideDown 0.25s ease-out;
+    }
+
+    .separator {
+        border-left: 1px solid #000;
+        border-left: 0;
+        border-bottom: 1px solid #000;
+        height: 1px;
+        width: 5rem;
+        margin: 0 auto;
+    }
+}
+
+
+/* =========================================================
+   TABLETTE LARGE — 768px → 992px
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /* À compléter selon besoins */
+}
+
+
+/* =========================================================
+   LAPTOP — 992px → 1200px
+   ========================================================= */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    #menu-toggle {
+        display: none !important;
+    }
+
+    #mobile-menu {
+        display: none !important;
+    }
+
+    #menu-container ul {
+        display: flex;
+        gap: 1.5rem;
+    }
+}
+
+
+/* =========================================================
+   DESKTOP — 1200px+
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+    html {
+        font-size: 18px;
+    }
+
+    #menu-toggle {
+        display: none !important;
+    }
+
+    #mobile-menu {
+        display: none !important;
+    }
+
+    #menu-container ul {
+        display: flex;
+        gap: 1.5rem;
+    }
+}
